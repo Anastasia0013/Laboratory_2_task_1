@@ -1,0 +1,4 @@
+s= 0.828917
+res=0
+absolute error= 0.828917
+reative error cannot be calculated

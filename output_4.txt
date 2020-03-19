@@ -1,0 +1,4 @@
+s= 2.37298
+res=3
+absolute error= 0.62702
+reative error= 0.209007
