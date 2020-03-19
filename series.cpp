@@ -1,4 +1,4 @@
-#include "series.h"
+
 #include <cmath>
 #include <iostream>
 using namespace std;

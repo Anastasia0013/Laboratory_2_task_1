@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <math.h>
+#include"Header.h"
 #include "series.h"
 using namespace std;
 int main()
@@ -17,16 +18,15 @@ int main()
 		else {
 			s = sum(esp, a);
 			cout << "s= " << s << endl;
-			double res;
-			res = pow((a + 1), 0.5);
-			cout << "res=" << res << endl;
-			double aer = abs(res - s);
-			if (res != 0) {
-				double rer = aer / res;
-				cout << "absolute error= " << aer << endl << "reative error= " << rer;
+			double res=1;
+			double aer = 1;
+			double rer = 1;
+			pogr(a,s, res, aer, rer);
+			if (rer != -1) {
+				cout <<"res="<<res<<endl<< "absolute error= " << aer << endl << "reative error= " << rer;
 			}
 			else
-				cout << "absolute error= " << aer << endl << "reative error cannot be calculated ";
+				cout << "res=" << res << endl << "absolute error= " << aer << endl << "reative error cannot be calculated ";
 
 		}
 	}
